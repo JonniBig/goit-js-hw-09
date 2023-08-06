@@ -14,7 +14,7 @@ function getRandomHexColor() {
 startBtn.addEventListener('click', e => {
   intervalID = setInterval(() => {
     body.style.backgroundColor = getRandomHexColor();
-  }, 100);
+  }, 1000);
   e.target.setAttribute('disabled', true);
   e.target.nextElementSibling.removeAttribute('disabled');
 });
